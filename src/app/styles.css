@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    background-color: rgba(27, 27, 27);
+    color: white;
+    font-family: "Sansita", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Apply overflow-x: hidden to the body to prevent horizontal scrolling */
+body {
+    overflow-x: hidden;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-scroll {
+    animation: scroll var(--animation-duration) linear infinite var(--animation-direction);
+}
+
+/* Example: Apply overflow-y: hidden to specific components */
+.specific-component {
+    overflow-y: hidden;
+}
+
+.black-background {
+    background-color: black;
+}
+
+.tgb {
+    border: 2px solid white;
+}
+
+.tgb-red {
+    border: 2px solid red;
+}
+
+.tgb-green {
+    border: 2px solid green;
+}
+
+.text-blue {
+    background-color: transparent;
+}
+
+.bg-black-1 {
+    background-color: rgb(9, 9, 9);
+}
