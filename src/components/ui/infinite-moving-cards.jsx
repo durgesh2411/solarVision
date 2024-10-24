@@ -13,10 +13,6 @@ export const InfiniteMovingCards = ({
   const containerRef = React.useRef(null);
   const scrollerRef = React.useRef(null);
 
-  useEffect(() => {
-    addAnimation();
-  }, [addAnimation]);
-
   const [start, setStart] = useState(false);
 
   function addAnimation() {
@@ -57,6 +53,10 @@ export const InfiniteMovingCards = ({
       }
     }
   };
+
+  useEffect(() => {
+    addAnimation();
+  }, [addAnimation]); // Added addAnimation to the dependency array
 
   return (
     <div
