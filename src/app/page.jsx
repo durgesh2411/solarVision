@@ -2,7 +2,6 @@ import Header from "@/componentscopy/ui/Header";
 import { BackgroundBeamsDemo } from "@/container/beams";
 import { FlipWordsDemo } from "@/container/FlipWords";
 import Footer from "@/container/Footer";
-import { BackgroundBeamsWithCollisionDemo } from "@/container/holi";
 import { LampDemo } from "@/container/lampBar";
 import { InfiniteMovingCardsDemo } from "@/container/movingCards";
 import { NavbarDemo } from "@/container/navbar";
