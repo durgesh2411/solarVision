@@ -73,31 +73,31 @@ const Contact = () => {
               </div>
               {/* select */}
               <Select>
-                <SelectTrigger className="w-full bg-[#1b1b1b]" >
-                    <SelectValue  placeholder="Select a service"  className="bg-[#1b1b1b]" />
-                </SelectTrigger>
-                <SelectContent>
-                    <SelectGroup>
-                        <SelectLabel className="">Select a service</SelectLabel>
-                        <SelectItem value="est">Machine Learning</SelectItem>
-                        <SelectItem value="cst">Deep Learning</SelectItem>
-                        <SelectItem value="mst">Full-Stack-Development</SelectItem>
-                        <SelectItem value="hst">Dev Ops</SelectItem>
-                    </SelectGroup>
-                </SelectContent>
-              </Select>
-              {/* textarea */}
-              <Textarea
-              className="h-[200px]"
-              placeholder="Type your message here."
-                />
-                {/* btn */}
-                <Button size="md" className="max-w-40 bg-[#1b1b1b]">
-                    Send message
-                </Button>
-            </form>
-          </div>
-          {/* info */}
+              <SelectTrigger className="w-full bg-[#1b1b1b]">
+  <SelectValue placeholder="Select a service" className="bg-[#1b1b1b]" />
+</SelectTrigger>
+<SelectContent>
+  <SelectGroup>
+    <SelectLabel>Select a service</SelectLabel>
+    <SelectItem value="est">Machine Learning</SelectItem>
+    <SelectItem value="cst">Deep Learning</SelectItem>
+    <SelectItem value="mst">Full-Stack Development</SelectItem>
+    <SelectItem value="hst">Dev Ops</SelectItem>
+  </SelectGroup>
+</SelectContent>
+</Select>
+{/* textarea */}
+<Textarea
+  className="h-[200px]"
+  placeholder="Type your message here."
+/>
+{/* btn */}
+<Button size="md" className="max-w-40 bg-[#1b1b1b]">
+  Send message
+</Button>
+</form>
+</div>
+{/* info */}
           <div className="flex-1 flex items-center xl:justify-end order-1
           xl:order-none mb-8 xl:mb-0">
             <ul className="flex flex-col gap-10">
