@@ -14,16 +14,13 @@ export default function Home() {
   return (
     <section>
       <Header />
-      <setion className="flex flex-row">
+      <setion className="flex flex-row bg-black-1">
       <TypewriterEffectSmoothDemo />
       <Image src="/rocket.png"
-      alt="" width={600} height={350} className="absolute left-[58%] top-[5.75rem] bg-transparent" />
+      alt="" width={660} height={350} className="absolute left-[58%] top-[5.75rem] bg-transparent z-50" />
       </setion>
-      <Title />
+      {/* <Title /> */}
       <FlipWordsDemo />
-      {/* <BackgroundBeamsWithCollisionDemo /> */}
-      {/* <LampDemo /> */}
-      {/* <BackgroundBeamsDemo /> */}
       <TimelineDemo />
       <InfiniteMovingCardsDemo />
       <Footer />

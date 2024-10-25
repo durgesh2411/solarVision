@@ -20,16 +20,15 @@ export const TypewriterEffectSmooth = ({
       <div className="flex">
         {wordsArray.map((word, idx) => {
           return (
-            <div key={`word-${idx}`} className="inline-block">
+            <div key={`word-${idx}`} className="inline-block bg-black-1">
               {word.text.map((char, index) => (
                 <span
                   key={`char-${index}`}
-                  className={cn(`dark:text-white text-black text-2xl md:text-4xl lg:text-8xl`, word.className)}>
+                  className={cn(`dark:text-white text-black text-4xl md:text-4xl lg:text-8xl bg-black-1`, word.className)}>
                   {char}
                 </span>
               ))}
-              {/* Add a space after each word */}
-              <span className="inline-block">&nbsp;</span>
+              <span className="inline-block bg-black-1">&nbsp;</span>
             </div>
           );
         })}
@@ -38,8 +37,8 @@ export const TypewriterEffectSmooth = ({
   };
 
   return (
-    <div className={cn("flex items-center space-x-1 my-6 h-auto pt-2", className)}>
-      <motion.div
+<div className={cn("flex items-center justify-center text-2xl space-x-1 my-8 h-auto pt-2 bg-black-1", className)}>
+<motion.div
         className="overflow-hidden pb-2"
         initial={{
           width: "0%",
@@ -53,14 +52,14 @@ export const TypewriterEffectSmooth = ({
           delay: 1,
         }}>
         <div
-          className="text-xs sm:text-base md:text-xl lg:text-3xl xl:text-5xl font-bold"
+          className="text-xs sm:text-base md:text-xl lg:3xl xl:text-6xl font-bold bg-black-1"
           style={{
             whiteSpace: "nowrap",
           }}>
           {renderWords()}
         </div>
       </motion.div>
-      <motion.span
+      {/* <motion.span
         initial={{
           opacity: 0,
         }}
@@ -75,7 +74,7 @@ export const TypewriterEffectSmooth = ({
         className={cn(
           "block rounded-sm w-1 h-4 sm:h-6 xl:h-12 bg-blue-500",
           cursorClassName
-        )}></motion.span>
+        )}></motion.span> */}
     </div>
   );
 };

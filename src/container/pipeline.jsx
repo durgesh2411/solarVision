@@ -8,7 +8,7 @@ export function TimelineDemo() {
       content: (
         <div className="relative">
           <p
-            className="text-neutral-800 relative dark:text-neutral-200 text-md md:text-xl font-normal mb-8">
+            className="text-neutral-800 relative dark:text-neutral-200 text-md md:text-xl font-normal mb-8 para">
             Collected data from multiple locations and satellites, including both India and outside India of
             both high and low resolutions.
           </p>
@@ -47,7 +47,7 @@ export function TimelineDemo() {
       content: (
         <div>
           <p
-            className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
+            className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8 para">
             Performed Manual annotation of data using Roboflow technology to separate the arrays of solar panels
             from non-significant regions.
           </p>
@@ -85,7 +85,7 @@ export function TimelineDemo() {
       content: (
         <div>
           <p
-            className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-normal mb-4">
+            className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-normal mb-4 para">
             Data Augmentation technique to augment data and orient it into multiple variations
             of the original images for data diversity.
           </p>
@@ -123,7 +123,7 @@ export function TimelineDemo() {
       content: (
         <div>
           <p
-            className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-normal mb-4">
+            className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-normal mb-4 para">
             You Only Look Once (YOLO) Model is trained and tested on the augmented dataset
             to develop the confidence scores and oriented bounding boxes for the solar panels.
           </p>
@@ -161,7 +161,7 @@ export function TimelineDemo() {
       content: (
         <div>
           <p
-            className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-normal mb-4">
+            className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-normal mb-4 para">
             After detection of the solar panels, if any, and development of oriented bounding boxes, the
             non-solar panel area is blackened out by reducing the three color channels to zero.
           </p>
@@ -199,7 +199,7 @@ export function TimelineDemo() {
       content: (
         <div>
           <p
-            className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-normal mb-4">
+            className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-normal mb-4 para">
             Holistic Nested Edge and Canny Edge Detection algorithm is used for
             defining the closed edges as the quantization of solar panels for high resolution images.
           </p>
@@ -237,7 +237,7 @@ export function TimelineDemo() {
       content: (
         <div>
           <p
-            className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-normal mb-4">
+            className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-normal mb-4 para">
             Evaluation of solar panel area using subtractive methodology from uni-scale image
             area and approximating the total energy production.
           </p>

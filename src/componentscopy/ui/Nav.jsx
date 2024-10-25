@@ -13,10 +13,6 @@ const links = [
         path:"/analysis",
     },
     {
-        name: "demo",
-        path:"/demo",
-    },
-    {
         name: "contact us",
         path:"/contact",
     },
@@ -25,11 +21,11 @@ const links = [
 const Nav = () => {
     const pathname = usePathname();
     return(
-        <nav className="flex gap-8 pr-[3rem] black-background">          { /* this is give equal spacing*/}
+        <nav className="relative flex gap-x-[2rem] pr-[3rem] black-background -top-[1.25rem]">          { /* this is give equal spacing*/}
             {links.map((link, index) => {
                 return (
                     <Link href={link.path} key={index} className={`${link.path === pathname && "text-accent border-b-2 border-accent"}
-                    capitalize font-medium hover:text-accent transition-all black-background text-[1.175rem]`}>
+                    capitalize font-medium hover:text-accent transition-all black-background text-[1.8rem] -top-[1.5rem]`}>
                         {link.name}
                     </Link>
                 );
