@@ -19,7 +19,13 @@
     font-style: normal;
 }
 
-/* Apply overflow-x: hidden to the body to prevent horizontal scrolling */
+.para1 {
+   font-family: "JetBrains Mono", monospace !important;
+   font-optical-sizing: auto;
+   font-weight: 200;
+   font-style: normal;
+}
+
 body {
     overflow-x: hidden;
 }

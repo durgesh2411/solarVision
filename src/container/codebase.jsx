@@ -18,7 +18,7 @@ export function TracingBeamDemo() {
               {item.title}
             </p>
 
-            <div className="relative -top-[10rem] bg-transparent text-xl prose prose-sm dark:prose-invert left-[10vw]">
+            <div className="relative -top-[10rem] bg-transparent text-xl prose prose-sm dark:prose-invert left-[10vw] para">
               {item?.image && (
                 <Image
                   src={item.image}
@@ -27,7 +27,7 @@ export function TracingBeamDemo() {
                   width="1000"
                   className="relative rounded-lg left-[12vw] mb-10 object-cover" />
               )}
-              {item.description}
+              <div className='para1'>{item.description}</div>
             </div>
           </div>
         ))}
@@ -44,7 +44,7 @@ const dummyContent = [
         <p>
           Performed Data Collection and preprocessing on multiple satellite images from both
           India and foreign. The data collected was of diversified nature and was used for annotation
-          of Images in roboflow.
+          of Images in roboflow. The data collected is of variable orietations to encapsulate the diversity of solar panel and solar panel arrays in the dataset taken from urban areas.
         </p>
       </>
     ),
@@ -57,36 +57,20 @@ const dummyContent = [
     description: (
       <>
         <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
-        </p>
-        <p>
-          In dolore veniam excepteur eu est et sunt velit. Ipsum sint esse
-          veniam fugiat esse qui sint ad sunt reprehenderit do qui proident
-          reprehenderit. Laborum exercitation aliqua reprehenderit ea sint
-          cillum ut mollit.
+          Data Annotation is done on the images collected in the previous week. The images are annotated using Roboflow and the annotations are exported in YOLO format. The annotated images are then used for training the model. There are multiple models developed and stacked over each other for optimisation of resources and providing better accuracy.
         </p>
       </>
     ),
     badge: "Data Annotation and Model Training",
     image:
-      "/Vellore.png",
+      "/analysis-img1.jpg",
   },
   {
     title: "Week III",
     description: (
       <>
         <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+            The model trained in the previous week is tested on the test dataset. The model is tested for accuracy and the model is then evaluated for Canny Edge Detection and Area Evaluation. The model is then used to predict the solar panels in the images and the results are evaluated for accuracy and precision. The model is then tuned for better ccuracy by applying Canny Edge and Holistic Edge Detection Algorithms to evaluate the number of solar panels.
         </p>
       </>
     ),
@@ -99,12 +83,7 @@ const dummyContent = [
     description: (
       <>
         <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+          The entire work is compressed and compiled into reports and the work is finally done and the results are evaluted. The project report encapsulates the entire work done and the proposed methodology is provided in the research paper. The research paper is then submitted to the respective authorities for evaluation and the results are then evaluated for the final submission.
         </p>
       </>
     ),
