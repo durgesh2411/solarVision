@@ -1,5 +1,4 @@
 import Header from "@/componentscopy/ui/Header";
-import ButtonComponent from "@/container/buttonComponent";
 import { TracingBeamDemo } from "@/container/codebase";
 import Footer from "@/container/Footer";
 import { HeroParallaxDemo } from "@/container/HeroParallax";
@@ -15,7 +14,6 @@ export default function Home() {
             <TracingBeamDemo />
             <TypewriterEffectSmoothDemo1 />
             <HeroParallaxDemo />
-            <ButtonComponent />
             <Footer />
         </div>
     )
