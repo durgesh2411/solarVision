@@ -20,7 +20,9 @@ const ButtonComponent = () => {
             <div className='relative h-[28rem] w-[24rem] flex flex-col justify-around items-center'>
                <div className='text-4xl h-[4rem] w-full dark:text-blue-500 text-center'>High resolution model</div>
                <div className='text-2xl h-[12rem] w-full text-center para'>Use images that are of high resolution which have threshold ranging from 0.75m to 1.8m.</div>
-               <button className='text-2xl h-[4rem] w-full rounded-2xl dark:text-blue-500 border-button'>Click Here</button>
+               <a href="https://solar-vision-inference-high-res.streamlit.app/" target="_blank" rel="noopener noreferrer" className='text-2xl h-[4rem] w-full rounded-2xl dark:text-blue-500 border-button'>
+  <button className='text-2xl h-[4rem] w-full rounded-2xl dark:text-blue-500 border-button'>Click Here</button>
+  </a>
             </div>
          </div>
       </section>
