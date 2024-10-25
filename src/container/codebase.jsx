@@ -50,7 +50,7 @@ const dummyContent = [
     ),
     badge: "Data Collection and Preprocessing",
     image:
-      "/Vellore.png",
+      "/rep1.png",
   },
   {
     title: "Week II",
@@ -76,7 +76,7 @@ const dummyContent = [
     ),
     badge: "Canny Edge and Area Evaluation",
     image:
-      "/Vellore.png",
+      "/analytics.png",
   },
   {
     title: "Week IV",
@@ -89,6 +89,6 @@ const dummyContent = [
     ),
     badge: "Research and Report Work",
     image:
-      "/Vellore.png",
+      "/rep2.png",
   },
 ];

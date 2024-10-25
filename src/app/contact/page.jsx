@@ -22,14 +22,14 @@ const info = [
     title: "Phone",
     placeholder: "Phone number",
     name: "phone",
-    description: "(+91) 8287372972",
+    description: "(+91) 8287372979",
   },
   {
     icon: <FaEnvelope />,
     title: "Email",
     placeholder: "Email",
     name: "email",
-    description: "durgesh.vns02@gmail.com",
+    description: "solar.vision24@gmail.com",
     required: true,
   },
   {
@@ -37,7 +37,7 @@ const info = [
     title: "Address",
     placeholder: "Address",
     name: "address",
-    description: "B.T Kawde Road,Mundawa,Pune-411036",
+    description: "NRSC-ISRO, Balanagar, Hyderabad, Telangana, India",
     required: true,
   },
 ];
