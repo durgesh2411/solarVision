@@ -7,7 +7,7 @@ import Inference from "@/container/Inference";
 import InferenceII from "@/container/InferenceII";
 import { TypewriterEffectSmoothDemo } from "@/container/typewriterAnalysis";
 import { TypewriterEffectSmoothDemo1 } from "@/container/typewriterAnalysisI";
-import { TypewriterEffectSmoothDemoIII } from "@/container/typewriterAnalysisIII";
+import { TypewriterEffectSmoothDemoIII } from "@/container/typeWriterAnalysisIII";
 import react from "react";
 
 export default function Home() {
