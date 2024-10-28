@@ -52,29 +52,13 @@ export const TypewriterEffectSmooth = ({
           delay: 1,
         }}>
         <div
-          className="text-xs sm:text-base md:text-xl lg:3xl xl:text-6xl font-bold bg-black-1"
+          className="text-xs sm:text-base md:text-xl lg:3xl xl:text-6xl lora-small bg-black-1"
           style={{
             whiteSpace: "nowrap",
           }}>
           {renderWords()}
         </div>
       </motion.div>
-      {/* <motion.span
-        initial={{
-          opacity: 0,
-        }}
-        animate={{
-          opacity: 1,
-        }}
-        transition={{
-          duration: 0.8,
-          repeat: Infinity,
-          repeatType: "reverse",
-        }}
-        className={cn(
-          "block rounded-sm w-1 h-4 sm:h-6 xl:h-12 bg-blue-500",
-          cursorClassName
-        )}></motion.span> */}
     </div>
   );
 };

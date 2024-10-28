@@ -19,7 +19,6 @@ export default function Home() {
       <Image src="/rocket.png"
       alt="" width={660} height={350} className="absolute left-[58%] top-[5.75rem] bg-transparent z-50" />
       </setion>
-      {/* <Title /> */}
       <FlipWordsDemo />
       <TimelineDemo />
       <InfiniteMovingCardsDemo />
