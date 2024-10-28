@@ -4,19 +4,24 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'; // Import icons
 const Footer = () => {
   const teamMembers = [
     {
+      name: "Dr. Jaya Saxena",
+      github: "",
+      linkedin: "",
+    },
+    {
       name: "Durgesh Singh",
-      github: "https://github.com/vishukalier",
-      linkedin: "https://www.linkedin.com/in/vishukalier18082003/",
+      github: "",
+      linkedin: "",
     },
     {
       name: "Virat Srivastava",
-      github: "https://github.com/durgesh",
-      linkedin: "https://www.linkedin.com/in/durgeshsingh",
+      github: "",
+      linkedin: "",
     },
     {
       name: "Vishu Kalier",
-      github: "https://github.com/johndoe",
-      linkedin: "https://www.linkedin.com/in/johndoe",
+      github: "",
+      linkedin: "",
     },
   ];
 
@@ -26,7 +31,7 @@ const Footer = () => {
         <h2 className="text-3xl font-semibold text-center mb-8 bg-black">
           Our Team
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 bg-black">
+        <div className="flex flex-wrap justify-center gap-8 bg-black">
           {teamMembers.map((member, index) => (
             <div
               key={index}
