@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Screenshot 2024-10-28 022755](https://github.com/user-attachments/assets/101890e8-d2c1-41c3-87f4-94b149711fdf)
 
-## Getting Started
+# Solar-Vision
 
-First, run the development server:
+This repository contains the backend for the Solar Panel Detection dashboard. It uses YOLO-based Oriented Object Detection (YOLOv8-OBB) models to detect solar panels from spatial images. The inference pipeline includes optional preprocessing, model prediction, and masking techniques for better visualization.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Setup](#setup)
+- [Usage](#usage)
+  - [Running the Inference](#running-the-inference)
+  - [Canny Edge Detection](#canny-edge-detection)
+- [Repository Structure](#repository-structure)
+- [Contact](#contact)
+
+## Project Overview
+
+This project serves as the backend for a dashboard that provides solar panel detection results from large spatial images using the YOLOv8-OBB model. It handles inference, edge detection, and masking outside bounding boxes. The results include predictions in multiple formats (image, JSON, and text), and the option to highlight edges in images.
+
+## Setup
+
+1. **Clone the Repository:**
+   ```
+   git clone https://github.com/Solar-Vision-NRSC-ISRO/Renewable-Solar-Energy-Estimation-using-Satellite-Images/tree/main.git
+   cd Renewable-Solar-Energy-Estimation-using-Satellite-Images
+   ```
+
+2. **Set Up Virtual Environment:**
+   Create and activate a virtual environment:
+   ```
+   python -m venv inference-venv
+   inference-venv/Scripts/activate
+   ```
+
+3. **Install Requirements:**
+   Install the necessary Python libraries:
+   ```
+   pip install -r requirement.txt
+   ```
+
+## Usage
+
+### Running the Inference
+
+1. **Inference Pipeline: Low res**
+   To perform inference on an image and obtain results in the specified format (image, JSON, text):
+   
+   ```
+   cd low-res-inference
+   python main-high-res.py
+   ```
+
+   The main script will:
+   - Load the pre-trained YOLOv8-OBB model.
+   - Perform inference on the provided image.
+   - Save predictions in `runs/obb/predict` (image, labels, JSON files).
+   - Optionally toggle the display of class names and bounding boxes.
+
+1. **Inference Pipeline High Res:**
+   To perform inference on an image and obtain results in the specified format (image, JSON, text):
+   
+   ```
+   cd high-res-inference
+   python main-low-res.py
+   ```
+
+   The main script will:
+   - Load the pre-trained YOLOv8-OBB model.
+   - Perform inference on the provided image.
+   - Save predictions in `runs/obb/predict` (image, labels, JSON files).
+   - Optionally toggle the display of class names and bounding boxes.
+
+   The result will be saved in `cannyImage/edgedimage.jpg`.
+
+### Optional Flags
+
+- You can toggle whether to show class names or bounding boxes in the saved image by adjusting the following flags in `main.py`:
+   ```python
+   show_class_name = False  # To show/hide class names
+   show_bounding_boxes = False  # To show/hide bounding boxes
+   ```
+
+## Repository Structure
+ 
+```
+high-res-inference
+├── main-high-res.py             # Main script for running the inference
+├── requirement.txt     # Required libraries for the project
+├── inference-venv/     # Virtual environment folder
+├── runs/               # Inference results will be saved here
+├── cannyImage/         # Directory for Canny edge-detected images
+└── weights/            # Pre-trained YOLOv8 model weights (best.pt)
+low-res-inference
+├── main-low-res.py             # Main script for running the inference
+├── requirement.txt     # Required libraries for the project
+├── inference-venv/     # Virtual environment folder
+├── runs/               # Inference results will be saved here
+├── cannyImage/         # Directory for Canny edge-detected images
+└── weights/            # Pre-trained YOLOv8 model weights (best.pt)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contact
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+For further details, reach out via [Virat Srivastava's GitHub](https://github.com/ViratSrivastava).
