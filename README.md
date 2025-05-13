@@ -102,4 +102,4 @@ low-res-inference
 
 ## Contact
 
-For further details, reach out via [Virat Srivastava's GitHub](https://github.com/ViratSrivastava).
+For further details, reach out via [Durgesh Singh's GitHub](https://github.com/durgesh2411).
